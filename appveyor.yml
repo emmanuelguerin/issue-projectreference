@@ -1,13 +1,10 @@
-image:
-  - Visual Studio 2015
-  - Visual Studio 2017
+image: Visual Studio 2017
 
 before_build:
-  - dotnet --version
-  - dotnet restore Library.UTest\Library.UTest.csproj
+  - '"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\bin\msbuild" /t:restore Library.UTest\Library.UTest.csproj'
 
 build_script:
-  - dotnet build Library.UTest\Library.UTest.csproj
+  - '"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\bin\msbuild" /t:build Library.UTest\Library.UTest.csproj'
 
 test_script:
-  - dotnet test Library.UTest\Library.UTest.csproj
+  - C:\Tools\NUnit3\nunit-console Library.UTest\bin\Debug\netcoreapp1.0\Library.UTest.dll
