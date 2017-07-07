@@ -1,0 +1,5 @@
+build_script:
+  - dotnet build Library.UTest\Library.UTest.csproj
+
+test_script:
+  - dotnet test Library.UTest\Library.UTest.csproj
