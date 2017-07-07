@@ -3,6 +3,7 @@ image:
   - Visual Studio 2017
 
 before_build:
+  - dotnet --version
   - dotnet restore Library.UTest\Library.UTest.csproj
 
 build_script:
