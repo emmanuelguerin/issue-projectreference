@@ -7,4 +7,4 @@ build_script:
   - '"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\bin\msbuild" /t:build Library.UTest\Library.UTest.csproj'
 
 test_script:
-  - C:\Tools\NUnit3\nunit-console Library.UTest\bin\Debug\netcoreapp1.0\Library.UTest.dll
+  - C:\Tools\NUnit3\nunit3-console Library.UTest\bin\Debug\netcoreapp1.0\Library.UTest.dll
