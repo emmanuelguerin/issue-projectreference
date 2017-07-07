@@ -1,3 +1,6 @@
+before_build:
+  - dotnet restore Library.UTest\Library.UTest.csproj
+
 build_script:
   - dotnet build Library.UTest\Library.UTest.csproj
 
