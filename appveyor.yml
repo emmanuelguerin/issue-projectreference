@@ -3,15 +3,3 @@ image: Visual Studio 2017
 before_build:
   - '"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\bin\msbuild" /t:restore Library.UTest\Library.UTest.csproj'
 
-build_script:
-  - '"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\bin\msbuild" /t:build Library.UTest\Library.UTest.csproj'
-
-test:
-  assemblies:
-     except:
-       - Library.UTest.dll
-
-artifacts:
-  - path: Library.UTest\bin\Debug
-    name: output
-    type: zip
